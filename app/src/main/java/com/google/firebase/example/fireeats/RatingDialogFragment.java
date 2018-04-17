@@ -24,8 +24,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.example.fireeats.model.Rating;
+import com.google.firebase.example.fireeats.model.Restaurant;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Transaction;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -100,4 +105,5 @@ public class RatingDialogFragment extends DialogFragment {
     public void onCancelClicked(View view) {
         dismiss();
     }
+
 }
